@@ -164,7 +164,7 @@ main { padding-top: 80px; }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 2px;
+  gap: 16px;
 }
 
 .project-card {
