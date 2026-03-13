@@ -76,12 +76,12 @@ nav {
 .nav-lang select {
   border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 8px 24px 8px 12px;
+  padding: 8px 16px 8px 12px;
   font-size: 14px;
   background: white;
   color: var(--ink);
   cursor: pointer;
-  min-width: 100px;
+  min-width: 108px;
 }
 
 .visually-hidden {
