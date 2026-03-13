@@ -69,14 +69,22 @@ nav {
   gap: 8px;
 }
 
+.nav-lang label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+}
+
 .nav-lang select {
   border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 13px;
+  padding: 8px 12px;
+  font-size: 14px;
   background: white;
   color: var(--ink);
   cursor: pointer;
+  min-width: 100px;
 }
 
 .visually-hidden {
