@@ -416,9 +416,13 @@ main { padding-top: 80px; }
 
 /* CASE HERO IMAGE */
 .case-hero-image {
-  margin: 32px 0;
+  margin: 40px 0 32px;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.case-hero-image .img-block {
+  margin: 0;
 }
 
 .case-hero-image img {
