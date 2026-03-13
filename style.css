@@ -414,6 +414,19 @@ main { padding-top: 80px; }
 
 .img-block.tall { aspect-ratio: 4/3; }
 
+/* CASE HERO IMAGE */
+.case-hero-image {
+  margin: 32px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.case-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* OUTCOME PILLS */
 .outcomes {
   display: flex;
