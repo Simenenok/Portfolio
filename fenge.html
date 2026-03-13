@@ -3,47 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fenge — Simen Enok Krøgenes</title>
+  <title data-i18n="case.fenge.title">Fenge — Simen Enok Krøgenes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">Simen Enok Krøgenes</a>
   <ul class="nav-links">
-    <li><a href="index.html">Prosjekter</a></li>
-    <li><a href="om-meg.html">Om meg</a></li>
-    <li><a href="om-meg.html#kontakt">Kontakt</a></li>
+    <li><a href="index.html" data-i18n="nav.projects">Prosjekter</a></li>
+    <li><a href="om-meg.html" data-i18n="nav.about">Om meg</a></li>
+    <li><a href="om-meg.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
   </ul>
+  <div class="nav-lang">
+    <label for="language-select" class="visually-hidden">Språk / Language</label>
+    <select id="language-select" aria-label="Språk / Language">
+      <option value="no" data-i18n="lang.no">Norsk</option>
+      <option value="en" data-i18n="lang.en">English</option>
+    </select>
+  </div>
 </nav>
 
 <main>
   <div class="container">
 
     <section class="case-hero fade-up">
-      <span class="case-tag">Masteroppgave · 2023–2025 · NTNU</span>
-      <h1>Digital læring for komplekse miljøutfordringer</h1>
-      <p class="lead">
+      <span class="case-tag" data-i18n="case.fenge.tag">Masteroppgave · 2023–2025 · NTNU</span>
+      <h1 data-i18n="case.fenge.heading">Digital læring for komplekse miljøutfordringer</h1>
+      <p class="lead" data-i18n="case.fenge.lead">
         Hvordan kan design gjøre tung fagkunnskap om villreinforvaltning tilgjengelig for frivillige, jegere og allmennheten — uten å miste presisjon og faglig tyngde?
       </p>
     </section>
 
     <div class="case-meta fade-up">
       <div class="meta-item">
-        <span class="meta-label">Rolle</span>
-        <span class="meta-value">UX-designer, forsker, prototypist</span>
+        <span class="meta-label" data-i18n="case.fenge.meta.role.label">Rolle</span>
+        <span class="meta-value" data-i18n="case.fenge.meta.role.value">UX-designer, forsker, prototypist</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Kontekst</span>
-        <span class="meta-value">Masteroppgave, NTNU · Fenge / Lakter AS</span>
+        <span class="meta-label" data-i18n="case.fenge.meta.context.label">Kontekst</span>
+        <span class="meta-value" data-i18n="case.fenge.meta.context.value">Masteroppgave, NTNU · Fenge / Lakter AS</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Periode</span>
-        <span class="meta-value">2023–2025</span>
+        <span class="meta-label" data-i18n="case.fenge.meta.period.label">Periode</span>
+        <span class="meta-value" data-i18n="case.fenge.meta.period.value">2023–2025</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Verktøy</span>
-        <span class="meta-value">Figma, Miro, brukerintervjuer, prototype-testing</span>
+        <span class="meta-label" data-i18n="case.fenge.meta.tools.label">Verktøy</span>
+        <span class="meta-value" data-i18n="case.fenge.meta.tools.value">Figma, Miro, brukerintervjuer, prototype-testing</span>
       </div>
     </div>
 
@@ -51,11 +59,11 @@
       <div class="col">
 
         <section class="case-section fade-up">
-          <h2>Bakgrunn</h2>
-          <p>
+          <h2 data-i18n="case.fenge.section.background">Bakgrunn</h2>
+          <p data-i18n="case.fenge.section.background.p1">
             Villreinforvaltning i Norge involverer et komplekst nettverk av fageksperter, jegere, kommuner og frivillige organisasjoner. Fenge er en digital plattform som skal gjøre denne fagkunnskapen tilgjengelig — og min masteroppgave handlet om å designe læringsopplevelsen i hjertet av systemet.
           </p>
-          <p>
+          <p data-i18n="case.fenge.section.background.p2">
             Utfordringen var reell: informasjonen er fragmentert, fagspråket er tungt, og målgruppen er sammensatt. Designutfordringen var ikke bare estetisk — det handlet om å bygge bro mellom ekspertkunnskap og hverdagsbrukere.
           </p>
         </section>
@@ -69,39 +77,39 @@
           </p>
 
           <div class="insight">
-            <p>«Det finnes enorm kunnskap her — men den sitter i hodene på folk, ikke i systemer folk faktisk bruker.» — Fagekspert, villreinforvaltning</p>
+            <p data-i18n="case.fenge.quote">«Det finnes enorm kunnskap her — men den sitter i hodene på folk, ikke i systemer folk faktisk bruker.» — Fagekspert, villreinforvaltning</p>
           </div>
 
           <div class="process-steps">
             <div class="step">
               <div class="step-num">01</div>
-              <div class="step-title">Innsikt</div>
-              <div class="step-desc">Ekspertintervjuer, brukerintervjuer, kontekststudier</div>
+              <div class="step-title" data-i18n="case.fenge.process.insight">Innsikt</div>
+              <div class="step-desc" data-i18n="case.fenge.process.insight.desc">Ekspertintervjuer, brukerintervjuer, kontekststudier</div>
             </div>
             <div class="step">
               <div class="step-num">02</div>
-              <div class="step-title">Definere</div>
-              <div class="step-desc">Informasjonsarkitektur, brukerreiser, designprinsipper</div>
+              <div class="step-title" data-i18n="case.fenge.process.define">Definere</div>
+              <div class="step-desc" data-i18n="case.fenge.process.define.desc">Informasjonsarkitektur, brukerreiser, designprinsipper</div>
             </div>
             <div class="step">
               <div class="step-num">03</div>
-              <div class="step-title">Prototype</div>
-              <div class="step-desc">Lo-fi skisser → hi-fi prototype i Figma</div>
+              <div class="step-title" data-i18n="case.fenge.process.prototype">Prototype</div>
+              <div class="step-desc" data-i18n="case.fenge.process.prototype.desc">Lo-fi skisser → hi-fi prototype i Figma</div>
             </div>
             <div class="step">
               <div class="step-num">04</div>
-              <div class="step-title">Testing</div>
-              <div class="step-desc">Brukertesting med målgrupper, iterasjon</div>
+              <div class="step-title" data-i18n="case.fenge.process.test">Testing</div>
+              <div class="step-desc" data-i18n="case.fenge.process.test.desc">Brukertesting med målgrupper, iterasjon</div>
             </div>
           </div>
         </section>
 
         <section class="case-section fade-up">
-          <h2>Designvalg</h2>
-          <p>
+          <h2 data-i18n="case.fenge.section.design">Designvalg</h2>
+          <p data-i18n="case.fenge.section.design.p1">
             Et sentralt valg var å strukturere innholdet rundt læringsreiser fremfor informasjonskategorier. Brukere navigerer ikke etter fagbegreper — de navigerer etter spørsmål de faktisk stiller seg. Dette krevde en fullstendig omstrukturering av informasjonsarkitekturen.
           </p>
-          <p>
+          <p data-i18n="case.fenge.section.design.p2">
             Prototypen ble testet i flere runder med reelle brukere — både eksperter og lekfolk — og iterert på bakgrunn av tilbakemeldingene. Resultatet er et grensesnitt som lar kompleks kunnskap presenteres i kontekstsensitive lag.
           </p>
         </section>
@@ -109,12 +117,12 @@
         <div class="img-block tall fade-up">[ Skjermbilde: Prototype, informasjonsarkitektur ]</div>
 
         <section class="case-section fade-up">
-          <h2>Resultater</h2>
+          <h2 data-i18n="case.fenge.section.results">Resultater</h2>
           <div class="outcomes">
-            <span class="outcome-pill">Høyoppløselig Figma-prototype</span>
-            <span class="outcome-pill">Ny informasjonsarkitektur</span>
-            <span class="outcome-pill">5 brukertestingsrunder</span>
-            <span class="outcome-pill">Grunnlag for implementering</span>
+            <span class="outcome-pill" data-i18n="case.fenge.outcome.1">Høyoppløselig Figma-prototype</span>
+            <span class="outcome-pill" data-i18n="case.fenge.outcome.2">Ny informasjonsarkitektur</span>
+            <span class="outcome-pill" data-i18n="case.fenge.outcome.3">5 brukertestingsrunder</span>
+            <span class="outcome-pill" data-i18n="case.fenge.outcome.4">Grunnlag for implementering</span>
           </div>
           <p>
             Masteroppgaven munnet ut i en ferdig høyoppløselig prototype som nå danner grunnlaget for videre utvikling av Fenge-plattformen. Arbeidet ble presentert for fagmiljøet og mottatt med interesse fra DNT og samarbeidspartnere i forvaltningen.
@@ -122,8 +130,8 @@
         </section>
 
         <div style="display:flex;gap:12px;margin-top:48px;padding-top:48px;border-top:1px solid var(--line);" class="fade-up">
-          <a href="storebrand.html" class="btn btn-ghost">Neste prosjekt →</a>
-          <a href="index.html" class="btn btn-ghost">← Alle prosjekter</a>
+          <a href="storebrand.html" class="btn btn-ghost" data-i18n="case.fenge.cta.next">Neste prosjekt →</a>
+          <a href="index.html" class="btn btn-ghost" data-i18n="case.fenge.cta.all">← Alle prosjekter</a>
         </div>
 
       </div>
@@ -133,8 +141,8 @@
 </main>
 
 <footer>
-  <p>© 2025 Simen Enok Krøgenes</p>
-  <a href="om-meg.html#kontakt">Kontakt</a>
+  <p data-i18n="footer.copyright">© 2025 Simen Enok Krøgenes</p>
+  <a href="om-meg.html#kontakt" data-i18n="nav.contact">Kontakt</a>
 </footer>
 
 </body>

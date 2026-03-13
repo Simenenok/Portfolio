@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om meg — Simen Enok Krøgenes</title>
+  <title data-i18n="about.title">Om meg — Simen Enok Krøgenes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">Simen Enok Krøgenes</a>
   <ul class="nav-links">
-    <li><a href="index.html">Prosjekter</a></li>
-    <li><a href="om-meg.html" class="active">Om meg</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="index.html" data-i18n="nav.projects">Prosjekter</a></li>
+    <li><a href="om-meg.html" class="active" data-i18n="nav.about">Om meg</a></li>
+    <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
   </ul>
+  <div class="nav-lang">
+    <label for="language-select" class="visually-hidden">Språk / Language</label>
+    <select id="language-select" aria-label="Språk / Language">
+      <option value="no" data-i18n="lang.no">Norsk</option>
+      <option value="en" data-i18n="lang.en">English</option>
+    </select>
+  </div>
 </nav>
 
 <main>
@@ -27,17 +35,17 @@
       </div>
 
       <div class="about-content">
-        <h1>UX-designer med et bein i fagkunnskap og et i folk</h1>
+        <h1 data-i18n="about.h1">UX-designer med et bein i fagkunnskap og et i folk</h1>
 
-        <p class="about-body">
+        <p class="about-body" data-i18n="about.body.1">
           Jeg er Simen — UX-designer og rådgiver med master i industriell design fra NTNU. Jeg har brukt de siste fem årene på å jobbe i skjæringspunktet mellom komplekse fagdomener og menneskene som skal navigere dem.
         </p>
 
-        <p class="about-body">
+        <p class="about-body" data-i18n="about.body.2">
           Det som driver meg er de situasjonene der innholdet er viktig, men vanskelig å komme til — der ekspertkunnskap møter folk som bare vil forstå noe. Det kan være pensjonsprodukter hos Storebrand, villreinforvaltning i Fenge, eller opplæring av frivillige i DNT. Fellesnevneren er kompleksitet som trenger et godt designet mellomledd.
         </p>
 
-        <p class="about-body">
+        <p class="about-body" data-i18n="about.body.3">
           Jeg trives godt i tverrfaglige team og er vant til å jobbe tett med fageksperter, produkteiere og brukere samtidig. Jeg leverer som selvstendig konsulent og tar gjerne kontakt for kortere eller lengre engasjementer.
         </p>
 
@@ -45,35 +53,35 @@
 
         <div class="about-facts">
           <div>
-            <div class="fact-label">Utdanning</div>
-            <div class="fact-value">Master, NTNU · Interaksjon- og tjenestedesign</div>
+            <div class="fact-label" data-i18n="about.facts.education.label">Utdanning</div>
+            <div class="fact-value" data-i18n="about.facts.education.value">Master, NTNU · Interaksjon- og tjenestedesign</div>
           </div>
           <div>
-            <div class="fact-label">Basert i</div>
-            <div class="fact-value">Oslo</div>
+            <div class="fact-label" data-i18n="about.facts.location.label">Basert i</div>
+            <div class="fact-value" data-i18n="about.facts.location.value">Oslo</div>
           </div>
           <div>
-            <div class="fact-label">Tilgjengelighet</div>
-            <div class="fact-value">Åpen for konsulentoppdrag</div>
+            <div class="fact-label" data-i18n="about.facts.availability.label">Tilgjengelighet</div>
+            <div class="fact-value" data-i18n="about.facts.availability.value">Åpen for konsulentoppdrag</div>
           </div>
           <div>
-            <div class="fact-label">Verktøy</div>
-            <div class="fact-value">Figma, Miro, Adobe-pakken</div>
+            <div class="fact-label" data-i18n="about.facts.tools.label">Verktøy</div>
+            <div class="fact-value" data-i18n="about.facts.tools.value">Figma, Miro, Adobe-pakken</div>
           </div>
           <div>
-            <div class="fact-label">Metoder</div>
-            <div class="fact-value">Innsiktsarbeid, prototyping, workshopfasilitering</div>
+            <div class="fact-label" data-i18n="about.facts.methods.label">Metoder</div>
+            <div class="fact-value" data-i18n="about.facts.methods.value">Innsiktsarbeid, prototyping, workshopfasilitering</div>
           </div>
           <div>
-            <div class="fact-label">Språk</div>
-            <div class="fact-value">Norsk (C2), Engelsk (C1)</div>
+            <div class="fact-label" data-i18n="about.facts.languages.label">Språk</div>
+            <div class="fact-value" data-i18n="about.facts.languages.value">Norsk (C2), Engelsk (C1)</div>
           </div>
         </div>
 
         <hr class="about-divider">
 
         <div>
-          <div class="fact-label" style="margin-bottom:12px;">Frivillig og ledererfaring</div>
+          <div class="fact-label" style="margin-bottom:12px;" data-i18n="about.volunteer.title">Frivillig og ledererfaring</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <div style="display:flex;justify-content:space-between;font-size:14px;">
               <span>Leder og styreverv, NTNUI Sandvolleyball og Baneutvalget</span>
@@ -98,21 +106,21 @@
     </section>
 
     <section class="contact-section" id="kontakt">
-      <h2>Ta kontakt</h2>
-      <p>Ser du et potensielt samarbeid, eller vil du bare slå av en prat? Send meg en melding.</p>
+      <h2 data-i18n="about.contact.title">Ta kontakt</h2>
+      <p data-i18n="about.contact.body">Ser du et potensielt samarbeid, eller vil du bare slå av en prat? Send meg en melding.</p>
 
       <div class="contact-links fade-up">
         <a href="mailto:Simenenok@gmail.com" class="contact-link">
-          <span class="contact-link-label">E-post</span>
-          <span class="contact-link-value">Simenenok@gmail.com</span>
+          <span class="contact-link-label" data-i18n="about.contact.email.label">E-post</span>
+          <span class="contact-link-value" data-i18n="about.contact.email.value">Simenenok@gmail.com</span>
         </a>
         <a href="tel:+4794817373" class="contact-link">
-          <span class="contact-link-label">Telefon</span>
-          <span class="contact-link-value">+47 948 17 373</span>
+          <span class="contact-link-label" data-i18n="about.contact.phone.label">Telefon</span>
+          <span class="contact-link-value" data-i18n="about.contact.phone.value">+47 948 17 373</span>
         </a>
         <a href="https://linkedin.com" target="_blank" class="contact-link">
-          <span class="contact-link-label">LinkedIn</span>
-          <span class="contact-link-value">linkedin.com/in/simenkrogenes ↗</span>
+          <span class="contact-link-label" data-i18n="about.contact.linkedin.label">LinkedIn</span>
+          <span class="contact-link-value" data-i18n="about.contact.linkedin.value">linkedin.com/in/simenkrogenes ↗</span>
         </a>
       </div>
     </section>
@@ -121,8 +129,8 @@
 </main>
 
 <footer>
-  <p>© 2025 Simen Enok Krøgenes</p>
-  <a href="#kontakt">Kontakt</a>
+  <p data-i18n="footer.copyright">© 2025 Simen Enok Krøgenes</p>
+  <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
 </footer>
 
 </body>

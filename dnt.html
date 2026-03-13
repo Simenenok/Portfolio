@@ -3,47 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DNT — Simen Enok Krøgenes</title>
+  <title data-i18n="case.dnt.title">DNT — Simen Enok Krøgenes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-logo">Simen Enok Krøgenes</a>
   <ul class="nav-links">
-    <li><a href="index.html">Prosjekter</a></li>
-    <li><a href="om-meg.html">Om meg</a></li>
-    <li><a href="om-meg.html#kontakt">Kontakt</a></li>
+    <li><a href="index.html" data-i18n="nav.projects">Prosjekter</a></li>
+    <li><a href="om-meg.html" data-i18n="nav.about">Om meg</a></li>
+    <li><a href="om-meg.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
   </ul>
+  <div class="nav-lang">
+    <label for="language-select" class="visually-hidden">Språk / Language</label>
+    <select id="language-select" aria-label="Språk / Language">
+      <option value="no" data-i18n="lang.no">Norsk</option>
+      <option value="en" data-i18n="lang.en">English</option>
+    </select>
+  </div>
 </nav>
 
 <main>
   <div class="container">
 
     <section class="case-hero fade-up">
-      <span class="case-tag">Den Norske Turistforening · 2024–2025</span>
-      <h1>UX-rådgivning og opplæring av frivillige formidlere</h1>
-      <p class="lead">
+      <span class="case-tag" data-i18n="case.dnt.tag">Den Norske Turistforening · 2024–2025</span>
+      <h1 data-i18n="case.dnt.heading">UX-rådgivning og opplæring av frivillige formidlere</h1>
+      <p class="lead" data-i18n="case.dnt.lead" data-i18n="case.dnt.lead">
         Bidrag til digital utvikling og opplæring av frivillige villreinformidlere for DNT — Norges største friluftslivsorganisasjon med over 300 000 medlemmer.
       </p>
     </section>
 
     <div class="case-meta fade-up">
       <div class="meta-item">
-        <span class="meta-label">Rolle</span>
-        <span class="meta-value">UX-rådgiver, frivillig formidler</span>
+        <span class="meta-label" data-i18n="case.dnt.meta.role.label">Rolle</span>
+        <span class="meta-value" data-i18n="case.dnt.meta.role.value">UX-rådgiver, frivillig formidler</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Organisasjon</span>
-        <span class="meta-value">Den Norske Turistforening (DNT)</span>
+        <span class="meta-label" data-i18n="case.dnt.meta.organization.label">Organisasjon</span>
+        <span class="meta-value" data-i18n="case.dnt.meta.organization.value">Den Norske Turistforening (DNT)</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Periode</span>
-        <span class="meta-value">2024–2025</span>
+        <span class="meta-label" data-i18n="case.dnt.meta.period.label">Periode</span>
+        <span class="meta-value" data-i18n="case.dnt.meta.period.value">2024–2025</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Kontekst</span>
-        <span class="meta-value">Friluftsliv, naturforvaltning, digitale tjenester</span>
+        <span class="meta-label" data-i18n="case.dnt.meta.context.label">Kontekst</span>
+        <span class="meta-value" data-i18n="case.dnt.meta.context.value">Friluftsliv, naturforvaltning, digitale tjenester</span>
       </div>
     </div>
 
@@ -51,42 +59,42 @@
       <div class="col">
 
         <section class="case-section fade-up">
-          <h2>Bakgrunn</h2>
-          <p>
+          <h2 data-i18n="case.dnt.section.background">Bakgrunn</h2>
+          <p data-i18n="case.dnt.section.background.p1">
             Den Norske Turistforening er en av de mest kjente organisasjonene i Norge, med et stort nettverk av frivillige som er ryggraden i aktiviteten. En del av DNTs arbeid handler om å formidle kunnskap om norsk natur — og særlig om villrein og dens leveområder — til friluftsfolk og allmennheten.
           </p>
-          <p>
+          <p data-i18n="case.dnt.section.background.p2">
             Min tilknytning til DNT bygger på arbeidet med Fenge-prosjektet, der masteroppgaven min direkte adresserer behovet DNT og samarbeidspartnere har for bedre digital kunnskapsformidling i dette domenet.
           </p>
         </section>
 
         <div class="insight fade-up">
-          <p>Forbindelsen mellom Fenge-prosjektet og DNTs digitale utvikling er ikke tilfeldig — det er et bevisst valg om å jobbe der design faktisk kan ha innvirkning på noe som betyr noe.</p>
+          <p data-i18n="case.dnt.insight">Forbindelsen mellom Fenge-prosjektet og DNTs digitale utvikling er ikke tilfeldig — det er et bevisst valg om å jobbe der design faktisk kan ha innvirkning på noe som betyr noe.</p>
         </div>
 
         <section class="case-section fade-up">
-          <h2>Bidrag</h2>
+          <h2 data-i18n="case.dnt.section.contribution">Bidrag</h2>
 
           <div class="process-steps">
             <div class="step">
               <div class="step-num">01</div>
-              <div class="step-title">Rekruttering</div>
-              <div class="step-desc">Bidro til rekruttering av frivillige villreinformidlere</div>
+              <div class="step-title" data-i18n="case.dnt.process.recruit">Rekruttering</div>
+              <div class="step-desc" data-i18n="case.dnt.process.recruit.desc">Bidro til rekruttering av frivillige villreinformidlere</div>
             </div>
             <div class="step">
               <div class="step-num">02</div>
-              <div class="step-title">Opplæring</div>
-              <div class="step-desc">Deltatt i planlegging og gjennomføring av opplæringsuke</div>
+              <div class="step-title" data-i18n="case.dnt.process.training">Opplæring</div>
+              <div class="step-desc" data-i18n="case.dnt.process.training.desc">Deltatt i planlegging og gjennomføring av opplæringsuke</div>
             </div>
             <div class="step">
               <div class="step-num">03</div>
-              <div class="step-title">Rådgivning</div>
-              <div class="step-desc">UX-rådgivning for DNTs digitale flater og brukeropplevelse</div>
+              <div class="step-title" data-i18n="case.dnt.process.advice">Rådgivning</div>
+              <div class="step-desc" data-i18n="case.dnt.process.advice.desc">UX-rådgivning for DNTs digitale flater og brukeropplevelse</div>
             </div>
             <div class="step">
               <div class="step-num">04</div>
-              <div class="step-title">Videre</div>
-              <div class="step-desc">Utforsker mer formell rolle i organisasjonen</div>
+              <div class="step-title" data-i18n="case.dnt.process.future">Videre</div>
+              <div class="step-desc" data-i18n="case.dnt.process.future.desc">Utforsker mer formell rolle i organisasjonen</div>
             </div>
           </div>
 
@@ -98,25 +106,25 @@
         <div class="img-block fade-up">[ DNT-opplæring, friluftsliv ]</div>
 
         <section class="case-section fade-up">
-          <h2>Relevans for UX-konsulenter</h2>
-          <p>
+          <h2 data-i18n="case.dnt.section.relevance">Relevans for UX-konsulenter</h2>
+          <p data-i18n="case.dnt.relevance.p1">
             Arbeidet med en stor, kompleks ideell organisasjon som DNT krever andre designferdigheter enn privat sektor. Beslutningsprosesser er lengre, interessentene er mange og mangfoldige, og brukernes motivasjon er intrinsisk — ikke drevet av kommersielle insentiver.
           </p>
-          <p>
+          <p data-i18n="case.dnt.relevance.p2">
             Det er en kontekst som skjerper evnen til å lytte, tilpasse og kommunisere design på tvers av ulike fagmiljøer — ferdigheter som er direkte overførbare til konsulentarbeid i komplekse organisasjoner.
           </p>
         </section>
 
         <div class="outcomes fade-up">
-          <span class="outcome-pill">Stor ideell organisasjon</span>
-          <span class="outcome-pill">Opplæringsdesign</span>
-          <span class="outcome-pill">Naturformidling</span>
-          <span class="outcome-pill">Komplekse interessenter</span>
+          <span class="outcome-pill" data-i18n="case.dnt.outcome.1">Stor ideell organisasjon</span>
+          <span class="outcome-pill" data-i18n="case.dnt.outcome.2">Opplæringsdesign</span>
+          <span class="outcome-pill" data-i18n="case.dnt.outcome.3">Naturformidling</span>
+          <span class="outcome-pill" data-i18n="case.dnt.outcome.4">Komplekse interessenter</span>
         </div>
 
         <div style="display:flex;gap:12px;margin-top:48px;padding-top:48px;border-top:1px solid var(--line);" class="fade-up">
-          <a href="om-meg.html" class="btn btn-ghost">Om meg →</a>
-          <a href="index.html" class="btn btn-ghost">← Alle prosjekter</a>
+          <a href="om-meg.html" class="btn btn-ghost" data-i18n="case.dnt.cta.about">Om meg →</a>
+          <a href="index.html" class="btn btn-ghost" data-i18n="case.dnt.cta.all">← Alle prosjekter</a>
         </div>
 
       </div>
