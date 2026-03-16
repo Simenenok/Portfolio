@@ -316,6 +316,17 @@ main { padding-top: 80px; }
   font-weight: 400;
 }
 
+/* FIGURE / CAPTION */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink-subtle, #888);
+}
+
 /* CASE CONTENT */
 .case-content {
   padding: 64px 0;
