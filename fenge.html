@@ -6,20 +6,52 @@
   <title data-i18n="case.fenge.title">Fenge — Simen Enok Krøgenes</title>
   <link rel="stylesheet" href="style.css">
   <script src="i18n.js" defer></script>
+  <script src="nav.js" defer></script>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Simen Enok Krøgenes</a>
+  <a href="index.html" class="nav-logo">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M3 9.5L12 3L21 9.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 21V12h6v9" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    Simen Enok Krøgenes
+  </a>
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav.projects">Prosjekter</a></li>
+    <li class="nav-item-dropdown">
+      <button class="nav-dropdown-btn active" aria-expanded="false" aria-haspopup="true">
+        <span data-i18n="nav.projects">Prosjekter</span>
+        <svg class="nav-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+          <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-dropdown" role="menu">
+        <a href="fenge.html" class="nav-dropdown-item" role="menuitem">
+          <span class="nav-dd-tag" data-i18n="nav.dd.fenge.tag">Masteroppgave · Natur</span>
+          <span class="nav-dd-name">Fenge</span>
+          <span class="nav-dd-desc" data-i18n="nav.dd.fenge.desc">Digital læring for villreinforvaltning</span>
+        </a>
+        <a href="storebrand.html" class="nav-dropdown-item" role="menuitem">
+          <span class="nav-dd-tag" data-i18n="nav.dd.storebrand.tag">Pensjon · Forsikring</span>
+          <span class="nav-dd-name">Storebrand</span>
+          <span class="nav-dd-desc" data-i18n="nav.dd.storebrand.desc">Innsiktsarbeid og brukeropplevelse</span>
+        </a>
+        <a href="dnt.html" class="nav-dropdown-item" role="menuitem">
+          <span class="nav-dd-tag" data-i18n="nav.dd.dnt.tag">Friluftsliv · Frivillig</span>
+          <span class="nav-dd-name">DNT</span>
+          <span class="nav-dd-desc" data-i18n="nav.dd.dnt.desc">UX-rådgivning og opplæring</span>
+        </a>
+      </div>
+    </li>
     <li><a href="om-meg.html" data-i18n="nav.about">Om meg</a></li>
     <li><a href="om-meg.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
   </ul>
   <div class="nav-lang">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
-      <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 2C9.5 5 8 8.3 8 12s1.5 7 4 10M12 2c2.5 3 4 6.3 4 10s-1.5 7-4 10" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M2.5 9h19M2.5 15h19" stroke="currentColor" stroke-width="1.5"/>
     </svg>
     <select id="language-select" aria-label="Språk / Language">
       <option value="no" data-i18n="lang.no">Norsk</option>
@@ -33,7 +65,7 @@
 
     <section class="case-hero fade-up">
       <div class="case-hero-image">
-        <div class="img-block fade-up">[ Heroimage: Fenge-grensesnitt ]</div>
+        <img src="images/fenge/Hero-fenge.png" alt="Fenge grensesnitt" loading="lazy">
       </div>
       <span class="case-tag" data-i18n="case.fenge.tag">Masteroppgave · 2023–2025 · NTNU</span>
       <h1 data-i18n="case.fenge.heading">Digital læring for komplekse miljøutfordringer</h1>
@@ -135,9 +167,11 @@
           </p>
         </section>
 
-        <div style="display:flex;gap:12px;margin-top:48px;padding-top:48px;border-top:1px solid var(--line);" class="fade-up">
-          <a href="storebrand.html" class="btn btn-ghost" data-i18n="case.fenge.cta.next">Neste prosjekt →</a>
-          <a href="index.html" class="btn btn-ghost" data-i18n="case.fenge.cta.all">← Alle prosjekter</a>
+        <div class="case-nav fade-up">
+          <a href="index.html" class="btn btn-accent" data-i18n="case.nav.all">← Alle prosjekter</a>
+          <div class="case-nav-right">
+            <a href="storebrand.html" class="btn btn-ghost" data-i18n="case.nav.next">Neste →</a>
+          </div>
         </div>
 
       </div>
