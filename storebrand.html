@@ -37,11 +37,13 @@
           <span class="nav-dd-name">Storebrand</span>
           <span class="nav-dd-desc" data-i18n="nav.dd.storebrand.desc">Innsiktsarbeid og brukeropplevelse</span>
         </a>
+        <!-- DNT hidden: not active
         <a href="dnt.html" class="nav-dropdown-item" role="menuitem">
           <span class="nav-dd-tag" data-i18n="nav.dd.dnt.tag">Friluftsliv · Frivillig</span>
           <span class="nav-dd-name">DNT</span>
           <span class="nav-dd-desc" data-i18n="nav.dd.dnt.desc">UX-rådgivning og opplæring</span>
         </a>
+        -->
       </div>
     </li>
     <li><a href="om-meg.html" data-i18n="nav.about">Om meg</a></li>
@@ -65,7 +67,7 @@
 
     <section class="case-hero fade-up">
       <div class="case-hero-image">
-        <img src="images/storebrand/hero-storebrand.svg" alt="Storebrand Sandbox hero" loading="lazy">
+        <img src="images/storebrand/0hero-storebrand.svg" alt="Storebrand Sandbox hero" loading="lazy">
       </div>
       <span class="case-tag" data-i18n="case.storebrand.tag">Storebrand · Sommerpraktikum 2024 · Lysaker</span>
       <h1 data-i18n="case.storebrand.heading">Innsiktsarbeid i Norges største pensjonsselskap</h1>
@@ -96,6 +98,7 @@
     <div class="case-content">
       <div class="col">
 
+        <!-- OPPGAVEN -->
         <section class="case-section fade-up">
           <h2 data-i18n="case.storebrand.section.task">Oppgaven</h2>
           <p data-i18n="case.storebrand.task.p1">
@@ -108,11 +111,23 @@
         </div>
 
         <section class="case-section fade-up">
-          <h2 data-i18n="case.storebrand.section.research">Forskning</h2>
           <p data-i18n="case.storebrand.research.p1">
             I de første ukene brukte vi mye tid på å snakke med folk i huset, delta på lytteøkter, og til slutt gjennomførte vi også kundeintervjuer over telefon for å få et bedre inntrykk av problemområdet.
           </p>
+        </section>
 
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/1innganger.png"
+            data-src-no="images/storebrand/no/1innganger.png"
+            data-src-en="images/storebrand/en/1innganger.png"
+            alt="Innganger til Bedriftsportalen" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.innganger">Ulike innganger til Bedriftsportalen</figcaption>
+        </figure>
+
+        <!-- FORSKNING -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.storebrand.section.research">Forskning</h2>
           <div class="process-steps">
             <div class="step">
               <div class="step-num">23</div>
@@ -132,23 +147,20 @@
           </div>
         </section>
 
-        <figure class="fade-up">
-          <img src="images/storebrand/pathway.webp" alt="Kundens reise i dag kan ta ulike veier til Bedriftsportalen" loading="lazy" style="width:100%;display:block;">
-          <figcaption data-i18n="case.storebrand.fig.pathway">Kundens reise i dag kan ta ulike veier til endepunktet — Bedriftsportalen</figcaption>
-        </figure>
-
-        <section class="case-section fade-up">
-          <h2 data-i18n="case.storebrand.section.hypothesis">Hypoteser</h2>
-          <p data-i18n="case.storebrand.hypothesis.p1">
-            Etter innledende innsiktsarbeid identifiserte vi funn og konsistente mønstre. Basert på disse formulerte vi en rekke hypoteser som skulle testes videre.
-          </p>
-        </section>
+        <div class="insight fade-up">
+          <p data-i18n="case.storebrand.research.hypothesis">Etter at vi identifiserte funn og mønstre, formulerte vi en rekke hypoteser</p>
+        </div>
 
         <figure class="fade-up">
-          <img src="images/storebrand/hypothesis.webp" alt="Hypoteser utviklet fra innsiktsarbeidet" loading="lazy" style="width:100%;display:block;">
-          <figcaption data-i18n="case.storebrand.fig.hypothesis">Hypoteser formulert på bakgrunn av innledende funn</figcaption>
+          <img
+            src="images/storebrand/no/2hypoteser.png"
+            data-src-no="images/storebrand/no/2hypoteser.png"
+            data-src-en="images/storebrand/en/2hypoteser.png"
+            alt="Hypoteser" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.hypoteser">Hypoteser formulert på bakgrunn av innledende funn</figcaption>
         </figure>
 
+        <!-- DEFINERING -->
         <section class="case-section fade-up">
           <h2 data-i18n="case.storebrand.section.data">Definere data</h2>
           <p data-i18n="case.storebrand.data.p1">
@@ -157,69 +169,195 @@
           <p data-i18n="case.storebrand.data.p2">
             Vi sorterte etter positive og negative funn. Fargen på lappene sier noe om styrken på funnet — konsistente utsagn fra kunder gir et sterkere funn og dermed en mørkere farge.
           </p>
-          <ul>
-            <li data-i18n="case.storebrand.data.li1"><strong>Antall funn:</strong> Hvor mange funn per hypotese (både negative og positive). Måler relevans.</li>
-            <li data-i18n="case.storebrand.data.li2"><strong>Gjennomsnittsvekt:</strong> Gjennomsnittlig styrke på funnet uavhengig av positivt/negativt. Måler polaritet.</li>
-            <li data-i18n="case.storebrand.data.li3"><strong>Vektet sum:</strong> Σ (vekt × positiv – vekt × negativ). Måler samlet hypotesestyrke.</li>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/en/3datasorting1.png"
+            alt="Sortering av funn" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.datasorting">Funn sortert etter vekt og retning per hypotese</figcaption>
+        </figure>
+
+        <p class="fade-up" style="margin:32px 0 16px;font-weight:500;" data-i18n="case.storebrand.findings.summary.heading">
+          Oppsummering av hovedfunn: Kunder opplever at BP er tilpasset store bedrifter
+        </p>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/3hoofdfunn.png"
+            data-src-no="images/storebrand/no/3hoofdfunn.png"
+            data-src-en="images/storebrand/en/3hoofdfunn.png"
+            alt="Sammendrag av hovedfunn" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.hovedfunn">Oppsummering av hovedfunn</figcaption>
+        </figure>
+
+        <p class="fade-up" style="margin:32px 0 16px;font-weight:500;" data-i18n="case.storebrand.findings.landing.heading">
+          Landingssiden er inngangen til resten av BP
+        </p>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/4flyt.png"
+            data-src-no="images/storebrand/no/4flyt.png"
+            data-src-en="images/storebrand/en/4flyt.png"
+            alt="Landingssiden som inngang" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.flyt">Landingssiden som inngang til resten av portalen</figcaption>
+        </figure>
+
+        <p class="fade-up" style="color:var(--ink-muted);margin:32px 0 8px;" data-i18n="case.storebrand.findings.problem.label">Problemet var følgende:</p>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/5landingsside.png"
+            data-src-no="images/storebrand/no/5landingsside.png"
+            data-src-en="images/storebrand/en/5landingsside.png"
+            alt="Landingssiden i dag" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.landingsside">Landingssiden i dag</figcaption>
+        </figure>
+
+        <section class="case-section fade-up">
+          <p data-i18n="case.storebrand.findings.clicks">
+            Klikk på BP-forsiden indikerer at mange av modulene kundene bruker mest, tar opp minst plass på skjermen. F.eks. menylinjen øverst. Mange av de minst brukte modulene tar opp mest plass.
+          </p>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/6problemlanding.png"
+            data-src-no="images/storebrand/no/6problemlanding.png"
+            data-src-en="images/storebrand/en/6problemlanding.png"
+            alt="Klikkmønster på BP-forsiden" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.problemlanding">Klikkmønster på BP-forsiden</figcaption>
+        </figure>
+
+        <!-- FOKUS: 2–10 ANSATTE -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.storebrand.section.focus">Vi valgte å fokusere på bedrifter med 2–10 ansatte</h2>
+          <p data-i18n="case.storebrand.focus.portal.title">Bedriftsportalen i dag:</p>
+          <ul style="margin:8px 0 20px;padding-left:20px;display:flex;flex-direction:column;gap:4px;">
+            <li data-i18n="case.storebrand.focus.portal.li1">Tilpasset <strong>større kunder</strong></li>
+            <li data-i18n="case.storebrand.focus.portal.li2"><strong>Lik</strong> for alle kundesegmenter</li>
+            <li data-i18n="case.storebrand.focus.portal.li3"><strong>Overveldende</strong> for mange mindre kunder</li>
+          </ul>
+          <p data-i18n="case.storebrand.focus.companies.title">Bedrifter med <strong>2–10 ansatte</strong>:</p>
+          <ul style="margin:8px 0;padding-left:20px;display:flex;flex-direction:column;gap:4px;">
+            <li data-i18n="case.storebrand.focus.companies.li1">Nesten <strong>halvparten</strong> av bedriftene i <strong>porteføljen</strong></li>
+            <li data-i18n="case.storebrand.focus.companies.li2">Bidrar til <strong>flest henvendelser</strong> til kundefronten og dermed stor ressursbruk</li>
+            <li data-i18n="case.storebrand.focus.companies.li3">Har <strong>potensial</strong> til å bli større kunder</li>
           </ul>
         </section>
 
         <figure class="fade-up">
-          <img src="images/storebrand/datasorting1.png" alt="Rammeverk for sortering av funn" loading="lazy" style="width:100%;display:block;">
-          <figcaption data-i18n="case.storebrand.fig.datasorting">Funn sortert etter vekt og retning per hypotese</figcaption>
+          <img
+            src="images/storebrand/no/7kundesegment.png"
+            data-src-no="images/storebrand/no/7kundesegment.png"
+            data-src-en="images/storebrand/en/7kundesegment.png"
+            alt="Kundesegmenter" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.kundesegment">Kundesegmenter i porteføljen</figcaption>
         </figure>
-
-        <section class="case-section fade-up">
-          <h2 data-i18n="case.storebrand.section.findings">Sammendrag av hovedfunn</h2>
-          <p data-i18n="case.storebrand.findings.p1">
-            Kunder opplever at Bedriftsportalen er tilpasset store bedrifter. Landingssiden er inngangen til resten av portalen — og analysen av klikkmønstre viste at modulene kundene bruker mest, tar opp minst plass på skjermen.
-          </p>
-
-          <div class="process-steps">
-            <div class="step">
-              <div class="step-num">~½</div>
-              <div class="step-title" data-i18n="case.storebrand.stat.portfolio.title">Av porteføljen</div>
-              <div class="step-desc" data-i18n="case.storebrand.stat.portfolio.desc">Bedrifter med 2–10 ansatte utgjør nesten halvparten av alle bedriftskunder</div>
-            </div>
-            <div class="step">
-              <div class="step-num">↑</div>
-              <div class="step-title" data-i18n="case.storebrand.stat.inquiries.title">Flest henvendelser</div>
-              <div class="step-desc" data-i18n="case.storebrand.stat.inquiries.desc">Bidrar til størst ressursbruk i kundefronten</div>
-            </div>
-            <div class="step">
-              <div class="step-num">→</div>
-              <div class="step-title" data-i18n="case.storebrand.stat.growth.title">Vekstpotensial</div>
-              <div class="step-desc" data-i18n="case.storebrand.stat.growth.desc">Har potensial til å bli større kunder over tid</div>
-            </div>
-          </div>
-        </section>
 
         <figure class="fade-up">
-          <img src="images/storebrand/conclusions.webp" alt="Sammendrag av hovedfunn" loading="lazy" style="width:100%;display:block;">
-          <figcaption data-i18n="case.storebrand.fig.conclusions">Sammendrag av innsiktsarbeidet — kunder opplever BP som tilpasset store bedrifter</figcaption>
+          <img
+            src="images/storebrand/no/8tidsbruk.png"
+            data-src-no="images/storebrand/no/8tidsbruk.png"
+            data-src-en="images/storebrand/en/8tidsbruk.png"
+            alt="Tidsbruk per segment" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.tidsbruk">Tidsbruk per kundesegment</figcaption>
         </figure>
 
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/9profittovertid.png"
+            data-src-no="images/storebrand/no/9profittovertid.png"
+            data-src-en="images/storebrand/en/9profittovertid.png"
+            alt="Potensial over tid" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.profittovertid">Potensial over tid</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/10protopersonas.png"
+            data-src-no="images/storebrand/no/10protopersonas.png"
+            data-src-en="images/storebrand/en/10protopersonas.png"
+            alt="Proto-personas" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.integration.4">Proto-personas brukt i løsningsarbeidet</figcaption>
+        </figure>
+
+        <!-- NØKKELFUNN OG LØSNINGER -->
         <section class="case-section fade-up">
-          <h2 data-i18n="case.storebrand.section.solutions">Foreslåtte løsninger</h2>
+          <h2 data-i18n="case.storebrand.section.keyfind">Nøkkelfunn</h2>
+          <h3 style="font-family:var(--sans);font-size:16px;font-weight:500;margin-bottom:12px;" data-i18n="case.storebrand.solutions.proposed">Foreslåtte løsninger:</h3>
           <p data-i18n="case.storebrand.solutions.p1">
             Basert på innsiktsarbeidet og datagrunnlaget utviklet vi to ulike løsningsforslag: <strong>personalisering</strong> av Bedriftsportalen tilpasset mindre kunder, og <strong>integrasjon mot regnskapssystemer</strong> for å møte kundene der de allerede er.
           </p>
         </section>
 
         <figure class="fade-up">
-          <img src="images/storebrand/projection_solutions.webp" alt="Løsningsforslag: personalisering vs. regnskapssystemintegrasjon" loading="lazy" style="width:100%;display:block;">
-          <figcaption data-i18n="case.storebrand.fig.solutions">To løsningsretninger: personalisering av portalen vs. integrasjon til regnskapssystemer</figcaption>
+          <img
+            src="images/storebrand/no/11hoofdfunn.png"
+            data-src-no="images/storebrand/no/11hoofdfunn.png"
+            data-src-en="images/storebrand/en/11hoofdfunn.png"
+            alt="Nøkkelfunn oversikt" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.keyfind">Oppsummering av nøkkelfunn</figcaption>
         </figure>
 
-        <section class="case-section fade-up">
-          <h2 data-i18n="case.storebrand.section.learn">Lærdom</h2>
-          <p data-i18n="case.storebrand.learn.p1">
-            Storebrand ga meg erfaring med å navigere i en stor organisasjon med mange interessenter, strenge prosesser og høye krav til faglig presisjon. Det er en annen disiplin enn å jobbe i en startup — og en verdifull kontrast.
-          </p>
-          <p data-i18n="case.storebrand.learn.p2">
-            Erfaringen bekreftet at god innsikt ikke handler om å stille de rette spørsmålene, men om å skape de rette forutsetningene for at folk deler det de faktisk tenker — ikke det de tror du vil høre.
-          </p>
-        </section>
+        <p class="fade-up" style="margin:32px 0 16px;font-weight:500;" data-i18n="case.storebrand.solution.personal.title">Personaliseringsløsning</p>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/12overskrift1.png"
+            data-src-no="images/storebrand/no/12overskrift1.png"
+            data-src-en="images/storebrand/en/12overskrift1.png"
+            alt="Personaliseringsløsning oversikt" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.personal.1">Personaliseringsløsning — oversikt</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/13løsning1.png"
+            data-src-no="images/storebrand/no/13løsning1.png"
+            data-src-en="images/storebrand/en/13løsning1.png"
+            alt="Personaliseringsløsning grensesnitt" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.personal.2">Personaliseringsløsning — grensesnitt</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/14funn1.png"
+            data-src-no="images/storebrand/no/14funn1.png"
+            data-src-en="images/storebrand/en/14funn1.png"
+            alt="Personaliseringsløsning brukerfunn" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.personal.3">Personaliseringsløsning — brukerfunn</figcaption>
+        </figure>
+
+        <p class="fade-up" style="margin:32px 0 16px;font-weight:500;" data-i18n="case.storebrand.solution.integration.title">Integrasjonsløsning</p>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/15overskrift2.png"
+            data-src-no="images/storebrand/no/15overskrift2.png"
+            data-src-en="images/storebrand/en/15overskrift2.png"
+            alt="Integrasjonsløsning oversikt" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.integration.1">Integrasjonsløsning — oversikt</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/16løsning2.png"
+            data-src-no="images/storebrand/no/16løsning2.png"
+            data-src-en="images/storebrand/en/16løsning2.png"
+            alt="Integrasjonsløsning grensesnitt" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.integration.2">Integrasjonsløsning — grensesnitt</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/storebrand/no/17funn2.png"
+            data-src-no="images/storebrand/no/17funn2.png"
+            data-src-en="images/storebrand/en/17funn2.png"
+            alt="Integrasjonsløsning brukerfunn" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.storebrand.fig.integration.3">Integrasjonsløsning — brukerfunn</figcaption>
+        </figure>
 
         <div class="outcomes fade-up">
           <span class="outcome-pill" data-i18n="case.storebrand.outcome.1">B2B-innsiktsarbeid</span>
@@ -233,7 +371,9 @@
           <a href="index.html" class="btn btn-accent" data-i18n="case.nav.all">← Alle prosjekter</a>
           <div class="case-nav-right">
             <a href="fenge.html" class="btn btn-ghost" data-i18n="case.nav.prev">← Forrige</a>
+            <!-- DNT hidden: not active
             <a href="dnt.html" class="btn btn-ghost" data-i18n="case.nav.next">Neste →</a>
+            -->
           </div>
         </div>
 

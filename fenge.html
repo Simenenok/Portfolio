@@ -37,11 +37,13 @@
           <span class="nav-dd-name">Storebrand</span>
           <span class="nav-dd-desc" data-i18n="nav.dd.storebrand.desc">Innsiktsarbeid og brukeropplevelse</span>
         </a>
+        <!-- DNT hidden: not active
         <a href="dnt.html" class="nav-dropdown-item" role="menuitem">
           <span class="nav-dd-tag" data-i18n="nav.dd.dnt.tag">Friluftsliv · Frivillig</span>
           <span class="nav-dd-name">DNT</span>
           <span class="nav-dd-desc" data-i18n="nav.dd.dnt.desc">UX-rådgivning og opplæring</span>
         </a>
+        -->
       </div>
     </li>
     <li><a href="om-meg.html" data-i18n="nav.about">Om meg</a></li>
@@ -65,10 +67,10 @@
 
     <section class="case-hero fade-up">
       <div class="case-hero-image">
-        <img src="images/fenge/Hero-fenge.png" alt="Fenge grensesnitt" loading="lazy">
+        <img src="images/fenge/0hero-fenge.png" alt="Fenge grensesnitt" loading="lazy">
       </div>
       <span class="case-tag" data-i18n="case.fenge.tag">Masteroppgave · 2023–2025 · NTNU</span>
-      <h1 data-i18n="case.fenge.heading">Digital læring for komplekse miljøutfordringer</h1>
+      <h1 data-i18n="case.fenge.heading">Digital læring som virkemiddel i naturforvaltning</h1>
       <p class="lead" data-i18n="case.fenge.lead">
         Hvordan kan design gjøre tung fagkunnskap om villreinforvaltning tilgjengelig for frivillige, jegere og allmennheten — uten å miste presisjon og faglig tyngde?
       </p>
@@ -96,76 +98,269 @@
     <div class="case-content">
       <div class="col">
 
+        <!-- KONTEKST -->
         <section class="case-section fade-up">
-          <h2 data-i18n="case.fenge.section.background">Bakgrunn</h2>
-          <p data-i18n="case.fenge.section.background.p1">
-            Villreinforvaltning i Norge involverer et komplekst nettverk av fageksperter, jegere, kommuner og frivillige organisasjoner. Fenge er en digital plattform som skal gjøre denne fagkunnskapen tilgjengelig — og min masteroppgave handlet om å designe læringsopplevelsen i hjertet av systemet.
-          </p>
-          <p data-i18n="case.fenge.section.background.p2">
-            Utfordringen var reell: informasjonen er fragmentert, fagspråket er tungt, og målgruppen er sammensatt. Designutfordringen var ikke bare estetisk — det handlet om å bygge bro mellom ekspertkunnskap og hverdagsbrukere.
+          <h2 data-i18n="case.fenge.section.context">Kontekst</h2>
+          <p data-i18n="case.fenge.context.p1">
+            Norsk villreinforvaltning representerer en kompleks balanse mellom økologiske hensyn, menneskelig aktivitet og politiske prioriteringer. Mesteparten av villreinhabitatene er i dag klassifisert som lav eller middels tilstand, og menneskelig påvirkning er identifisert som en primær årsak.
           </p>
         </section>
 
-        <div class="img-block fade-up">[ Heroimage: Fenge-grensesnitt ]</div>
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/1kartdata.jpeg"
+            data-src-no="images/fenge/no/1kartdata.jpeg"
+            data-src-en="images/fenge/no/1kartdata.jpeg"
+            alt="Kart over villreinhabitat" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.kartdata">Kart over villreinhabitat i Norge</figcaption>
+        </figure>
+
+        <!-- PROBLEMSTILLING -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.problemstilling">Problemstilling</h2>
+        </section>
+
+        <div class="insight fade-up">
+          <p data-i18n="case.fenge.problemstilling">Hvordan kan strategisk, brukersentrert design støtte digital læring som øker forståelse og motiverer ansvarlig atferd i villreinområder?</p>
+        </div>
+
+        <!-- FOKUS -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.focus">Fokus</h2>
+          <p data-i18n="case.fenge.focus.p1">
+            Fremfor å evaluere økologiske konsekvenser utforsker dette prosjektet hvordan brukeropplevelse, læringsdesign og visuell kommunikasjon kan gjøre kompleks miljøkunnskap mer tilgjengelig, engasjerende og handlingsrettet.
+          </p>
+        </section>
+
+        <!-- PROSESS -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.process">Prosess</h2>
+          <p data-i18n="case.fenge.process.p1">
+            For å definere nærmere hvor hovedproblemet ligger, snakket jeg med 3 eksperter innen villreinforvaltning:
+          </p>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/2intervjuer.png"
+            data-src-no="images/fenge/no/2intervjuer.png"
+            data-src-en="images/fenge/no/2intervjuer.png"
+            alt="Ekspertintervjuer" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.intervjuer">Ekspertintervjuer gjennomført med forvaltere</figcaption>
+        </figure>
+
+        <div class="insight fade-up">
+          <p data-i18n="case.fenge.quote.manager">«Kanskje den fragmenterte informasjonen har vært et stort problem.» — Naturforvalter</p>
+        </div>
 
         <section class="case-section fade-up">
-          <h2>Prosess</h2>
-          <p>
-            Jeg gjennomførte et innsiktsarbeid med eksperter innen villreinforvaltning, representanter fra jegermiljøer og potensielle sluttbrukere. Intervjuene avdekket et klart gap: fagfolk hadde dyp kunnskap, men ingen gode verktøy for å formidle den videre.
+          <p data-i18n="case.fenge.process.p2">
+            Dette var et gjennomgående tema i alle intervjuene — alle pekte i ulike retninger, men kom til samme konklusjon:
           </p>
+        </section>
 
-          <div class="insight">
-            <p data-i18n="case.fenge.quote">«Det finnes enorm kunnskap her — men den sitter i hodene på folk, ikke i systemer folk faktisk bruker.» — Fagekspert, villreinforvaltning</p>
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/3quotes.png"
+            data-src-no="images/fenge/no/3quotes.png"
+            data-src-en="images/fenge/no/3quotes.png"
+            alt="Sitater fra intervjuer" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.quotes">Sitater og funn fra intervjuer</figcaption>
+        </figure>
+
+        <section class="case-section fade-up">
+          <p data-i18n="case.fenge.process.p3">
+            Ekspertene pekte alle på de samme løsningene, med klarere kommunikasjon som et viktig takeaway.
+          </p>
+          <p data-i18n="case.fenge.survey.intro">
+            Mens vi undersøkte mulige fremtidsscenarioer, ble det gjennomført en spørreundersøkelse.
+          </p>
+          <p data-i18n="case.fenge.survey.p1">
+            Konklusjonen var denne: Da deltakerne ble spurt om de små informasjonsbitene i undersøkelsen hjalp dem å ta bedre beslutninger, svarte de dette (1 = ikke i det hele tatt, 7 = i stor grad):
+          </p>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/4questioneer.png"
+            data-src-no="images/fenge/no/4questioneer.png"
+            data-src-en="images/fenge/no/4questioneer.png"
+            alt="Spørreundersøkelse — spørsmål" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.survey0">Spørreundersøkelse — spørsmål om informasjonsbiter</figcaption>
+        </figure>
+
+        <section class="case-section fade-up">
+          <p data-i18n="case.fenge.survey.p2">
+            Deltakerne ble deretter spurt om hvor det var mest praktisk for dem å lære om denne komplekse informasjonen:
+          </p>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/5questionner1.jpeg"
+            data-src-no="images/fenge/no/5questionner1.jpeg"
+            data-src-en="images/fenge/no/5questionner1.jpeg"
+            alt="Spørreundersøkelse — beslutningsstøtte" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.survey1">Resultater fra spørreundersøkelse — beslutningsstøtte</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/6workshopturister.png"
+            data-src-no="images/fenge/no/6workshopturister.png"
+            data-src-en="images/fenge/no/6workshopturister.png"
+            alt="Læringsarenaer" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.survey2">Hvor deltakerne foretrekker å lære</figcaption>
+        </figure>
+
+        <!-- TODELT LØSNING -->
+        <section class="case-section fade-up">
+          <p style="font-weight:500;" data-i18n="case.fenge.solution.conclusion">Konklusjonen var denne: en todelt løsning for testing</p>
+        </section>
+
+        <div class="process-steps fade-up" style="grid-template-columns:1fr 1fr;">
+          <div class="step">
+            <div class="step-title" data-i18n="case.fenge.solution.1.title">1. En holdningskampanje for å endre folks atferd og mønstre</div>
+            <div class="step-desc" data-i18n="case.fenge.solution.1.desc">En løsning som kombinerer fysiske og digitale kommunikasjonselementer for å gjøre kunnskap om villrein tilgjengelig in situ, der brukerne allerede er.</div>
           </div>
-
-          <div class="process-steps">
-            <div class="step">
-              <div class="step-num">01</div>
-              <div class="step-title" data-i18n="case.fenge.process.insight">Innsikt</div>
-              <div class="step-desc" data-i18n="case.fenge.process.insight.desc">Ekspertintervjuer, brukerintervjuer, kontekststudier</div>
-            </div>
-            <div class="step">
-              <div class="step-num">02</div>
-              <div class="step-title" data-i18n="case.fenge.process.define">Definere</div>
-              <div class="step-desc" data-i18n="case.fenge.process.define.desc">Informasjonsarkitektur, brukerreiser, designprinsipper</div>
-            </div>
-            <div class="step">
-              <div class="step-num">03</div>
-              <div class="step-title" data-i18n="case.fenge.process.prototype">Prototype</div>
-              <div class="step-desc" data-i18n="case.fenge.process.prototype.desc">Lo-fi skisser → hi-fi prototype i Figma</div>
-            </div>
-            <div class="step">
-              <div class="step-num">04</div>
-              <div class="step-title" data-i18n="case.fenge.process.test">Testing</div>
-              <div class="step-desc" data-i18n="case.fenge.process.test.desc">Brukertesting med målgrupper, iterasjon</div>
-            </div>
+          <div class="step">
+            <div class="step-title" data-i18n="case.fenge.solution.2.title">2. En e-læringsplattform der brukere enkelt kan lære om villrein</div>
+            <div class="step-desc" data-i18n="case.fenge.solution.2.desc">En løsning som bruker designstrategi og brukersentrert design for å oppmuntre til læring før, under og etter møtet med norsk natur.</div>
           </div>
-        </section>
+        </div>
 
         <section class="case-section fade-up">
-          <h2 data-i18n="case.fenge.section.design">Designvalg</h2>
-          <p data-i18n="case.fenge.section.design.p1">
-            Et sentralt valg var å strukturere innholdet rundt læringsreiser fremfor informasjonskategorier. Brukere navigerer ikke etter fagbegreper — de navigerer etter spørsmål de faktisk stiller seg. Dette krevde en fullstendig omstrukturering av informasjonsarkitekturen.
-          </p>
-          <p data-i18n="case.fenge.section.design.p2">
-            Prototypen ble testet i flere runder med reelle brukere — både eksperter og lekfolk — og iterert på bakgrunn av tilbakemeldingene. Resultatet er et grensesnitt som lar kompleks kunnskap presenteres i kontekstsensitive lag.
+          <p data-i18n="case.fenge.workshops.p1">
+            Det ble gjennomført flere workshops for å finne ut hvordan løsningen kunne realiseres:
           </p>
         </section>
 
-        <div class="img-block tall fade-up">[ Skjermbilde: Prototype, informasjonsarkitektur ]</div>
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/7forretningsvisualisering.png"
+            data-src-no="images/fenge/no/7forretningsvisualisering.png"
+            data-src-en="images/fenge/no/7forretningsvisualisering.png"
+            alt="Workshop" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.workshop">Workshop for å realisere løsningen</figcaption>
+        </figure>
 
         <section class="case-section fade-up">
-          <h2 data-i18n="case.fenge.section.results">Resultater</h2>
-          <div class="outcomes">
-            <span class="outcome-pill" data-i18n="case.fenge.outcome.1">Høyoppløselig Figma-prototype</span>
-            <span class="outcome-pill" data-i18n="case.fenge.outcome.2">Ny informasjonsarkitektur</span>
-            <span class="outcome-pill" data-i18n="case.fenge.outcome.3">5 brukertestingsrunder</span>
-            <span class="outcome-pill" data-i18n="case.fenge.outcome.4">Grunnlag for implementering</span>
-          </div>
-          <p>
-            Masteroppgaven munnet ut i en ferdig høyoppløselig prototype som nå danner grunnlaget for videre utvikling av Fenge-plattformen. Arbeidet ble presentert for fagmiljøet og mottatt med interesse fra DNT og samarbeidspartnere i forvaltningen.
+          <p data-i18n="case.fenge.workshops.p2">
+            Det ble deretter gjennomført en workshop med Fenge for å opprette en forretningsstruktur for Fenge.
+          </p>
+          <p data-i18n="case.fenge.workshops.p3">
+            Det ble testet to løsninger. En holdningskampanje for å øke bevissthet rundt problematikken og en videreutvikling av verktøyet Fenge for å øke brukervennligheten i brukerreisen når en tar et kurs i relevante områder:
           </p>
         </section>
+
+        <!-- HOLDNINGSKAMPANJE -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.campaign">Holdningskampanje</h2>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/8plakat.png"
+            data-src-no="images/fenge/no/8plakat.png"
+            data-src-en="images/fenge/no/8plakat.png"
+            alt="Holdningskampanje plakat" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.plakat">Holdningskampanje — plakat</figcaption>
+        </figure>
+
+        <div class="process-steps fade-up" style="grid-template-columns:1fr;">
+          <div class="step">
+            <div class="step-num" data-i18n="case.fenge.campaign.what.label">Hva</div>
+            <div class="step-desc" data-i18n="case.fenge.campaign.what.desc">En bevissthetskampanje utviklet for å øke forståelsen av villrein og redusere presset på habitatene gjennom bedre kunnskap og bevissthet.</div>
+          </div>
+          <div class="step">
+            <div class="step-num" data-i18n="case.fenge.campaign.how.label">Hvordan</div>
+            <div class="step-desc" data-i18n="case.fenge.campaign.how.desc">Kampanjen kombinerer fysiske og digitale kanaler for å nå et bredt publikum, og bruker tilgjengelige plattformer som sosiale medier for å senke terskelen for læring.</div>
+          </div>
+          <div class="step">
+            <div class="step-num" data-i18n="case.fenge.campaign.why.label">Hvorfor</div>
+            <div class="step-desc" data-i18n="case.fenge.campaign.why.desc">Økt kunnskap og en sterkere tilhørighetsfølelse gjør det lettere å bry seg, og kan bidra til at myke tiltak implementeres før strengere reguleringer blir nødvendig.</div>
+          </div>
+        </div>
+
+        <!-- NØKKELFUNN -->
+        <section class="case-section fade-up">
+          <p style="font-weight:500;margin-bottom:16px;" data-i18n="case.fenge.campaign.results">Resultatene var som følger:</p>
+
+          <p style="font-weight:500;margin-bottom:4px;" data-i18n="case.fenge.findings.shared.title">Felles intensjon, fragmentert forståelse</p>
+          <p data-i18n="case.fenge.findings.shared.p">Alle interessenter var enige om at villrein og nasjonalparker må beskyttes.</p>
+
+          <p style="font-weight:500;margin:16px 0 4px;" data-i18n="case.fenge.findings.experts.title">Eksperter kommuniserer kompleksitet</p>
+          <p data-i18n="case.fenge.findings.experts.p">DNT og eksperter støtter seg på forskingstung, nyansert informasjon.</p>
+
+          <p style="font-weight:500;margin:16px 0 4px;" data-i18n="case.fenge.findings.users.title">Brukere trenger kontekstuell klarhet, ikke mer informasjon</p>
+          <p data-i18n="case.fenge.findings.users.p">Turgåere og hyttebeboere spurte ikke etter mer data.</p>
+        </section>
+
+        <div class="process-steps fade-up" style="grid-template-columns:1fr 1fr;">
+          <div class="step">
+            <div class="step-num" data-i18n="case.fenge.section.campaign">Holdningskampanje</div>
+            <div class="step-desc">
+              <p data-i18n="case.fenge.findings.campaign.1">Effektiv for å øke bevissthet</p>
+              <p data-i18n="case.fenge.findings.campaign.2">Begrenset støtte for dypere læring</p>
+              <p data-i18n="case.fenge.findings.campaign.3">Avhengig av tilrettelegging</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">Fenge</div>
+            <div class="step-desc">
+              <p data-i18n="case.fenge.findings.fenge.1">Behov for tydeligere tilbakemelding og læringsstruktur</p>
+              <p data-i18n="case.fenge.findings.fenge.2">Viktigheten av tydelig visuelt språk</p>
+              <p data-i18n="case.fenge.findings.fenge.3">Verdien av fleksibel, kontekstbevisst læring</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FENGE LØSNING -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.fenge">Fenge</h2>
+          <p data-i18n="case.fenge.fenge.desc">
+            Resultatet er en høyoppløselig prototype av en digital læringsopplevelse i Fenge, designet for å støtte korte, kontekstuelle læringsøyeblikk fremfor lange kurs.
+          </p>
+        </section>
+
+        <!-- FINALE PROTOTYPER -->
+        <section class="case-section fade-up">
+          <h2 data-i18n="case.fenge.section.final">Finale prototyper</h2>
+        </section>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/9keyframes.png"
+            data-src-no="images/fenge/no/9keyframes.png"
+            data-src-en="images/fenge/no/9keyframes.png"
+            alt="Nøkkelrammer fra prototype" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.keyframes">Nøkkelrammer fra prototype</figcaption>
+        </figure>
+
+        <figure class="fade-up">
+          <img
+            src="images/fenge/no/10courseframes.png"
+            data-src-no="images/fenge/no/10courseframes.png"
+            data-src-en="images/fenge/no/10courseframes.png"
+            alt="Kursrammer fra prototype" loading="lazy" style="width:100%;display:block;">
+          <figcaption data-i18n="case.fenge.fig.courseframes">Kursrammer fra prototype</figcaption>
+        </figure>
+
+        <section class="case-section fade-up">
+          <p data-i18n="case.fenge.final.p1">
+            Etter å ha laget de endelige lo-fi-prototypene testet jeg plattformen på 4 brukere og holdningskampanjen under en visning av prosjektene der gjester fikk stille spørsmål.
+          </p>
+          <p data-i18n="case.fenge.final.p2">
+            Holdningskampanjen viste lovende resultater, og brukerne syntes det var positivt for å skape oppmerksomhet rundt problemet, men trengte mer teoretisk fundament. Det er her plattformen viste sin overlegenhet, og ble valgt som den endelige vinkelen for prosjektet.
+          </p>
+        </section>
+
+        <div class="outcomes fade-up">
+          <span class="outcome-pill" data-i18n="case.fenge.outcome.1">Høyoppløselig Figma-prototype</span>
+          <span class="outcome-pill" data-i18n="case.fenge.outcome.2">Ny informasjonsarkitektur</span>
+          <span class="outcome-pill" data-i18n="case.fenge.outcome.3">5 brukertestingsrunder</span>
+          <span class="outcome-pill" data-i18n="case.fenge.outcome.4">Grunnlag for implementering</span>
+        </div>
 
         <div class="case-nav fade-up">
           <a href="index.html" class="btn btn-accent" data-i18n="case.nav.all">← Alle prosjekter</a>

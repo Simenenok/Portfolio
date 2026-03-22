@@ -445,6 +445,12 @@ figcaption {
   margin: 0 auto;
 }
 
+.case-content .col figure {
+  width: calc(var(--max) - 96px);
+  max-width: calc(100vw - 96px);
+  margin-left: calc((var(--col) - min(var(--max) - 96px, 100vw - 96px)) / 2);
+}
+
 .case-section {
   margin-bottom: 64px;
 }
