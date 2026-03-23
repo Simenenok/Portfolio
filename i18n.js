@@ -36,6 +36,7 @@ const i18n = (() => {
       "index.project.dnt.title": "UX-rådgivning og frivillig formidling, DNT",
       "index.project.dnt.desc": "Bidrag til digital utvikling og opplæring av frivillige formidlere for Den Norske Turistforening — Norges største friluftslivsorganisasjon.",
       "index.project.card.cta": "Les casen",
+      "index.rec.label": "Anbefalinger",
 
       "about.title": "Om meg — Simen Enok Krøgenes",
       "about.h1": "UX-designer med et bein i fagkunnskap og et i folk",
@@ -341,6 +342,7 @@ const i18n = (() => {
       "index.project.dnt.title": "UX consulting and volunteer education, DNT",
       "index.project.dnt.desc": "Contribution to digital development and volunteer training for the Norwegian Trekking Association — Norway’s largest outdoor association.",
       "index.project.card.cta": "Read case",
+      "index.rec.label": "Recommendations",
 
       "about.title": "About — Simen Enok Krøgenes",
       "about.h1": "UX designer with one foot in domain knowledge and one in people",

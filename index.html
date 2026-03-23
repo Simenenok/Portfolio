@@ -147,6 +147,20 @@
       </div>
     </section>
 
+    <section class="recommendations">
+      <p class="rec-label" data-i18n="index.rec.label">Anbefalinger</p>
+      <div class="rec-card">
+        <p class="rec-quote" id="rec-quote"></p>
+        <p class="rec-author" id="rec-author"></p>
+        <p class="rec-role" id="rec-role"></p>
+      </div>
+      <div class="rec-nav">
+        <button class="rec-btn" onclick="recMove(-1)">&#8592;</button>
+        <button class="rec-btn" onclick="recMove(1)">&#8594;</button>
+        <div class="rec-dots" id="rec-dots"></div>
+      </div>
+    </section>
+
   </div>
 </main>
 
@@ -156,5 +170,49 @@
   <a href="om-meg.html#kontakt" data-i18n="nav.contact">Kontakt</a>
 </footer>
 
+<script>
+const recTestimonials = [
+  {
+    quote: "Simen creates a sense of trust around him and demonstrates a high level of motivation in everything he does. He is creative, professionally skilled, and has shown strong interest and engagement in the subject matter.",
+    author: "Elin Sørby",
+    role: "Learning Program Manager, Storebrand Livsforsikring AS"
+  },
+  {
+    quote: "Simen has demonstrated a strong understanding of usability and design principles, and has proven to be proficient with relevant tools and technologies.",
+    author: "Emil Berg",
+    role: "Daglig leder, Kodeo AS"
+  },
+  {
+    quote: "We are very satisfied with the final result the students presented to us. Our goal is to make it easy for companies to promote themselves within our app, and this is something the students clearly took into account.",
+    author: "Thomas Skattum",
+    role: "Daglig leder, Bloksberg Technologies AS"
+  }
+];
+
+let recCurrent = 0;
+
+function recRender() {
+  const t = recTestimonials[recCurrent];
+  document.getElementById("rec-quote").textContent = t.quote;
+  document.getElementById("rec-author").textContent = t.author;
+  document.getElementById("rec-role").textContent = t.role;
+  document.querySelectorAll(".rec-dot").forEach((d, i) => d.classList.toggle("active", i === recCurrent));
+}
+
+function recMove(dir) {
+  recCurrent = (recCurrent + dir + recTestimonials.length) % recTestimonials.length;
+  recRender();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dotsEl = document.getElementById("rec-dots");
+  recTestimonials.forEach((_, i) => {
+    const d = document.createElement("div");
+    d.className = "rec-dot" + (i === 0 ? " active" : "");
+    dotsEl.appendChild(d);
+  });
+  recRender();
+});
+</script>
 </body>
 </html>
