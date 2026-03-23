@@ -805,16 +805,19 @@ footer a:hover { color: var(--ink); }
 /* RECOMMENDATIONS */
 .recommendations { padding: 64px 0 80px; }
 .rec-label { font-size: 13px; color: var(--muted); margin-bottom: 24px; letter-spacing: 0.02em; }
-.rec-card { border: 1px solid var(--line); border-radius: 12px; padding: 24px; min-height: 140px; }
-.rec-quote { font-size: 16px; line-height: 1.7; margin: 0 0 20px; color: var(--ink); }
+.rec-scroll { overflow-x: auto; padding-bottom: 16px; scrollbar-width: thin; }
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+  width: max-content;
+  min-width: 100%;
+}
+.rec-card { border: 1px solid var(--line); border-radius: 12px; padding: 24px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; }
+.rec-quote { font-size: 15px; line-height: 1.7; margin: 0 0 20px; color: var(--ink); flex: 1; }
 .rec-author { font-size: 13px; font-weight: 500; margin: 0; color: var(--ink); }
 .rec-role { font-size: 13px; color: var(--muted); margin: 0; }
-.rec-nav { display: flex; align-items: center; gap: 12px; margin-top: 16px; }
-.rec-btn { background: none; border: 1px solid var(--line); border-radius: 8px; width: 36px; height: 36px; cursor: pointer; font-size: 16px; color: var(--ink); }
-.rec-btn:hover { background: var(--surface); }
-.rec-dots { display: flex; gap: 6px; }
-.rec-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
-.rec-dot.active { background: var(--ink); }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

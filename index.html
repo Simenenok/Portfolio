@@ -149,15 +149,8 @@
 
     <section class="recommendations">
       <p class="rec-label" data-i18n="index.rec.label">Anbefalinger</p>
-      <div class="rec-card">
-        <p class="rec-quote" id="rec-quote"></p>
-        <p class="rec-author" id="rec-author"></p>
-        <p class="rec-role" id="rec-role"></p>
-      </div>
-      <div class="rec-nav">
-        <button class="rec-btn" onclick="recMove(-1)">&#8592;</button>
-        <button class="rec-btn" onclick="recMove(1)">&#8594;</button>
-        <div class="rec-dots" id="rec-dots"></div>
+      <div class="rec-scroll">
+        <div class="rec-grid" id="rec-grid"></div>
       </div>
     </section>
 
@@ -189,29 +182,14 @@ const recTestimonials = [
   }
 ];
 
-let recCurrent = 0;
-
-function recRender() {
-  const t = recTestimonials[recCurrent];
-  document.getElementById("rec-quote").textContent = t.quote;
-  document.getElementById("rec-author").textContent = t.author;
-  document.getElementById("rec-role").textContent = t.role;
-  document.querySelectorAll(".rec-dot").forEach((d, i) => d.classList.toggle("active", i === recCurrent));
-}
-
-function recMove(dir) {
-  recCurrent = (recCurrent + dir + recTestimonials.length) % recTestimonials.length;
-  recRender();
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  const dotsEl = document.getElementById("rec-dots");
-  recTestimonials.forEach((_, i) => {
-    const d = document.createElement("div");
-    d.className = "rec-dot" + (i === 0 ? " active" : "");
-    dotsEl.appendChild(d);
+  const grid = document.getElementById("rec-grid");
+  recTestimonials.forEach(t => {
+    const card = document.createElement("div");
+    card.className = "rec-card";
+    card.innerHTML = `<p class="rec-quote">${t.quote}</p><div><p class="rec-author">${t.author}</p><p class="rec-role">${t.role}</p></div>`;
+    grid.appendChild(card);
   });
-  recRender();
 });
 </script>
 </body>
