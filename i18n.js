@@ -646,15 +646,15 @@ const i18n = (() => {
       if (src) img.src = src;
     });
 
-    const langSelect = document.getElementById("language-select");
-    if (langSelect) langSelect.value = lang;
+    document.querySelectorAll(".lang-switcher .lang").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
   }
 
   function init() {
-    const langSelect = document.getElementById("language-select");
-    if (langSelect) {
-      langSelect.addEventListener("change", (event) => setLanguage(event.target.value));
-    }
+    document.querySelectorAll(".lang-switcher .lang").forEach((btn) => {
+      btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+    });
 
     setLanguage(getPreferredLanguage());
   }

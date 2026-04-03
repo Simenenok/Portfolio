@@ -179,25 +179,36 @@ nav {
   line-height: 1.45;
 }
 
-.nav-lang {
+.lang-switcher {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.nav-lang svg {
+.lang-switcher .lang {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: var(--ink-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
 }
 
-.nav-lang select {
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 8px 16px 8px 12px;
-  font-size: 14px;
-  background: white;
+.lang-switcher .lang.active {
   color: var(--ink);
-  cursor: pointer;
-  min-width: 108px;
+}
+
+.lang-switcher .lang:hover {
+  color: var(--ink);
+}
+
+.lang-divider {
+  width: 1px;
+  height: 12px;
+  background: var(--line);
 }
 
 .visually-hidden {
